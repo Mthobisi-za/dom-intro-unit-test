@@ -1,7 +1,7 @@
 var sms = "sms";
 var call = "call";
 describe('Radio Bill', () => {
-    it("should make a call button", ()=>{
+    it("should make a call ", ()=>{
         var run = textBillTotal();
         assert.equal(run.doCall(call), 2.75);
     })
@@ -13,7 +13,7 @@ describe('Radio Bill', () => {
         run.doCall(call);
         assert.equal(run.doCall(call), 13.75)
     })
-    it("should make an sms button", ()=>{
+    it("should make an sms ", ()=>{
         var run = textBillTotal();
         assert.equal(run.doSms(sms), 0.75);
     })
